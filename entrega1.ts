@@ -26,7 +26,14 @@ let presentacionTorta: number=0;
 let dificultadTorta: number=0;
 
 function calcularPuntaje (numero1: number, numero2: number, numero3: number): number{
-return numero1+numero2+numero3
+    if ((numero1>=1 && numero1<=5) && (numero2>=1 && numero2<=5) && (numero3>=1 && numero3<=5)){
+        
+        return numero1+numero2+numero3
+    }else {
+        console.log("Ingrese puntaje valido");
+        return 0;
+        
+    }
 }
 
 function determinarGanador (num1:number, num2:number, num3:number): string {
